@@ -1,0 +1,12 @@
+[Unit]
+Description=Webssh
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/wssh --fbidhttp=False
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
